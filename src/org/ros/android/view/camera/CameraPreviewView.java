@@ -88,7 +88,7 @@ public class CameraPreviewView extends ViewGroup {
     addView(surfaceView);
     surfaceHolder = surfaceView.getHolder();
     surfaceHolder.addCallback(new SurfaceHolderCallback());
-    surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+//    surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
     bufferingPreviewCallback = new BufferingPreviewCallback();
   }
 

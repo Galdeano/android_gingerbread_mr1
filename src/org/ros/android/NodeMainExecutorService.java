@@ -164,7 +164,8 @@ public class NodeMainExecutorService extends Service implements NodeMainExecutor
     super.onDestroy();
   }
 
-  @Override
+  @SuppressWarnings("deprecation")
+@Override
   public int onStartCommand(Intent intent, int flags, int startId) {
     if (intent.getAction() == null) {
       return START_NOT_STICKY;
